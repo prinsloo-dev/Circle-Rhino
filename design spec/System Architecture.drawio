@@ -1,0 +1,91 @@
+<mxfile host="Electron" modified="2023-11-19T10:33:01.920Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="YW7TUgztVZIQGds5h0WN" version="21.2.8" type="device">
+  <diagram id="EP83DsyiXT85WLnToadZ" name="Page-1">
+    <mxGraphModel dx="1660" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="edjm9655C9gfvN_UPPb8-8" value="API Service" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-100" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="edjm9655C9gfvN_UPPb8-14" target="edjm9655C9gfvN_UPPb8-98" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-14" value="Socket IO Server" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-17" value="User Interface" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-53" value="&lt;br&gt;Reverse Proxy" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;align=center;" parent="1" vertex="1">
+          <mxGeometry x="460" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-128" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="edjm9655C9gfvN_UPPb8-54" target="edjm9655C9gfvN_UPPb8-53" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-54" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=-90;verticalAlign=middle;labelPosition=center;verticalLabelPosition=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="297.5" y="60" width="25" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-55" value="HTTP(S)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="297.5" y="105" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-93" value="This is where the Accuchip domain is handdled.&lt;br&gt;Enriches and stores all event data.&lt;br&gt;Processes event data to create events." style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;align=left;" parent="1" vertex="1">
+          <mxGeometry x="200" y="430" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-95" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" parent="1" source="edjm9655C9gfvN_UPPb8-94" target="edjm9655C9gfvN_UPPb8-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-94" value="API" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="370" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-11" value="PostgresSQL DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="310" y="552.5" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-99" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="edjm9655C9gfvN_UPPb8-97" target="edjm9655C9gfvN_UPPb8-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-97" value="SocketIO Client" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="400" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-98" value="SocketIO Client" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="430" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-111" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="edjm9655C9gfvN_UPPb8-110" target="edjm9655C9gfvN_UPPb8-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-110" value="SocketIO Client" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="595" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-127" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="edjm9655C9gfvN_UPPb8-126" target="edjm9655C9gfvN_UPPb8-54" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-126" value="Browser" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;align=center;" parent="1" vertex="1">
+          <mxGeometry x="100" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-129" value="Keycloak" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;align=center;" parent="1" vertex="1">
+          <mxGeometry x="630" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-131" value="Connects to all Interfaces and APIs via a nginx location" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;align=left;" parent="1" vertex="1">
+          <mxGeometry x="460" y="145" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-132" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;align=left;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="460" y="195" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-137" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="edjm9655C9gfvN_UPPb8-135" target="edjm9655C9gfvN_UPPb8-129" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-135" value="localhost/auth" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;align=left;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="460" y="215" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-138" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.397;entryY=-0.019;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="edjm9655C9gfvN_UPPb8-136" target="edjm9655C9gfvN_UPPb8-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-136" value="localhost/customer-manag&lt;br&gt;ement" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;align=left;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="460" y="235" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="edjm9655C9gfvN_UPPb8-216" value="etc..." style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;align=left;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="460" y="290" width="120" height="25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Rhino Job System</title>
+    <link href="../style/css/bootstrap.css" rel="stylesheet">
+</head>
+<body class="bg-body-secondary">
+  <nav class="navbar bg-dark fixed-top">
+    <div class="container-fluid row">
+        <div class="col">
+            <button class="navbar-toggler btn btn-outline-dark bg-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="col-10">
+            <h1 class="display-6 text-center text-secondary">Circle Rhino Job System</h1>
+        </div>
+        <div class="col bg-secondary card" >
+            <img src="../style/icons/person-circle.svg" class="bi bi-person-circle secondary card-img-top" style="width: 40px; align-self: center;"/>
+            <div class="card-body p-0">
+              <p class="text-dark text-sm-center card-text">Juan</p>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start bg-secondary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> </h5>
+                <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item d-grid gap-1 p-0 m-0">
+                    <button type="button" class="btn btn-dark m-1">
+                        <a class="nav-link active" aria-current="page" href="../index.html" style="color: rgb(108, 117, 125)">Home</a>
+                    </button>
+                    </li>
+                    <li class="nav-item d-grid gap-1 p- m-0">
+                        <button type="button" class="btn btn-dark m-1 dropdown-toggle row p-3"  data-bs-toggle="dropdown" style="color: rgb(108, 117, 125)">
+                            Dashboards
+                        </button>
+                        <ul class="dropdown-menu bg-dark text-center me-2 ms-2">
+                            <li class="nav-item d-grid gap-1 p-0 m-0">
+                                <button type="button" class="btn btn-secondary m-1 p-0">
+                                  <a class="dropdown-item nav-link" aria-current="page" href="../Dashboards/open_jobs.html">Open Jobs</a>
+                                </button>
+                            </li>
+                            <li class="nav-item d-grid gap-1 p-0 m-0">
+                                <button type="button" class="btn btn-secondary m-1 p-0">
+                                    <a class="dropdown-item nav-link" aria-current="page" href="">Timeline</a>
+                                </button>
+                            </li>
+                            <li class="nav-item d-grid gap-1 p-0 m-0">
+                                <button type="button" class="btn btn-secondary m-1 p-0">
+                                    <a class="dropdown-item nav-link" aria-current="page" href="">Job/Quote</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-grid gap-1 p-0 m-0">
+                      <button type="button" class="btn btn-dark m-1">
+                          <a class="nav-link active" aria-current="page" href="../pages/quotelist.html" style="color: rgb(108, 117, 125)">Quotes</a>
+                      </button>
+                  </li>
+                    <li class="nav-item d-grid gap-1 p-0 m-0">
+                        <button type="button" class="btn btn-dark m-1">
+                            <a class="nav-link active" aria-current="page" href="../pages/Joblist.html" style="color: rgb(108, 117, 125)">Jobs</a>
+                        </button>
+                    </li>
+                    <li class="nav-item d-grid gap-1 p-0">
+                        <button type="button" class="btn btn-dark m-1">
+                            <a class="nav-link active" aria-current="page" href="../pages/listDeparts.html" style="color: rgb(108, 117, 125)">Departments</a>
+                        </button>
+                    </li>
+                    <li class="nav-item d-grid gap-1 p-0">
+                        <button type="button" class="btn btn-dark m-1">
+                            <a class="nav-link active" aria-current="page" href="../pages/employees.html" style="color: rgb(108, 117, 125)">Employees</a>
+                        </button>
+                    </li>
+                    <li class="nav-item d-grid gap-1 p-0">
+                        <button type="button" class="btn btn-dark m-1">
+                            <a class="nav-link active" aria-current="page" href="../pages/customerlist.html" style="color: rgb(108, 117, 125)">Customers</a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </nav>
+    <div class="row bg-black mt-4 pt-5 "></div>
+    <div class="row bg-secondary pt-2 ">
+        <div class="col-1 m-0 p-0 pt-1">
+          <a href="./Joblist.html">
+            <button type="button" class="btn  btn-secondary" style="color: rgb(0, 0, 0); width: 100%;">
+                <img src="../style/icons/reply-fill.svg" />
+                Back
+            </button>
+          </a>
+        </div>
+        <div class="col-1 m-0 p-0 pt-1">
+            <button type="button" class="btn  btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAssign" aria-controls="offcanvasAssign" style="color: rgb(0, 0, 0); width: 100%;">
+                <img src="../style/icons/box-arrow-down-right.svg" />
+                Assign
+            </button>
+        </div>
+        <div class="col-1 m-0 p-0 pt-1">
+            <button type="button" class="btn  btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAccept" aria-controls="offcanvasAccept" style="color: rgb(0, 0, 0); width: 100%;">
+                <img src="../style/icons/box-arrow-in-up-left.svg" />
+                Accept
+            </button>
+        </div>
+        <div class="col-1 m-0 p-0 pt-1">
+          <button type="button" class="btn  btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAccept" aria-controls="offcanvasAccept" style="color: rgb(0, 0, 0); width: 100%;">
+            <img src="../style/icons/clock.svg" />
+            Pending
+        </button>
+        </div>
+        <div class="col-1 m-0 p-0 pt-1">
+            <button type="button" class="btn  btn-secondary" style="color: rgb(0, 0, 0); width: 100%;">
+                <img src="../style/icons/check2.svg" />
+                Complete
+            </button>
+        </div>
+        <div class="col-1 m-0 p-0 pt-1">
+            <button type="button" class="btn  btn-secondary" style="color: rgb(0, 0, 0); width: 100%;">
+                <img src="../style/icons/check-circle.svg" />
+                Close Job
+            </button>
+        </div>
+        <div class="col-1 m-0 p-0 pt-1">
+            <button type="button" class="btn  btn-secondary" style="color: rgb(0, 0, 0); width: 100%;">
+                <img src="../style/icons/printer.svg" />
+                Print Job Card
+            </button>
+        </div>
+        <div class="col-1 m-0 p-0 pt-1">
+          <button type="button" class="btn  btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDelete" aria-controls="offcanvasDelete" style="color: rgb(0, 0, 0); width: 100%;">
+            <img src="../style/icons/trash.svg" />
+            Delete
+        </button>
+        </div>
+        <div class="col-1 m-0 p-0 pt-1">
+        </div>
+        <div class="col-1 m-0 p-0 pt-1">
+        </div>
+        <div class="col float-end">
+      </div>
+    </div>
+    <div class="row m-3">
+      <div class="col-12 text-center">
+        <h3 class="display-5">Job Details</h3>
+        <div class="form">
+          <form method="get">
+            <div class="row g-3">
+              <div class="col-1"></div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">Job Number:</label>
+              </div>
+              <div class="col-2">
+                <input type="text" class="form-control" name="Job Title" value="12345">
+              </div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">Start Date:</label>
+              </div>
+              <div class="col-2">
+                <input type="text" class="form-control"  name="Job Title" value="14 November 2023">
+              </div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">Customer:</label>
+              </div>
+              <div class="col-2">
+                <input type="text" class="form-control"  name="Job Title" value="Darios Deli">
+              </div>
+            </div> 
+            <div class="row g-3">
+              <div class="col-1"></div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">Contact Person:</label>
+              </div>
+              <div class="col-2">
+                <input type="text" class="form-control"  name="contact_person" value="Dario">
+              </div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">Contact Number:</label>
+              </div>
+              <div class="col-2">
+                <input type="text" class="form-control"  name="contact_number" value="082 665 4325">
+              </div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">Address:</label>
+              </div>
+              <div class="col-2">
+                <input type="text" class="form-control"  name="address" value="10 Deli Street, Rustenburg">
+              </div>
+            </div>
+            <div class="row g-3">
+              <div class="col-1"></div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">Fitment Date:</label>
+              </div>
+              <div class="col-2">
+                <input type="text" class="form-control"  name="contact_person" value="16 November 2023">
+              </div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">Completion date:</label>
+              </div>
+              <div class="col-2">
+                <input type="text" class="form-control"  name="contact_number" value="17 November 2023">
+              </div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">Payment Status:</label>
+              </div>
+              <div class="col-2">
+                <select class="form-select" id="inputGroupSelect01">
+                  <option value="1">Full Payment</option>
+                  <option value="2">Deposit</option>
+                  <option value="3">Order</option>
+                  <option value="3">COD</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="list">
+          <h3 class="display-5 mt-5">History</h3>
+          <form method="get">
+            <table class="table table-hover table-bordered table-secondary m-3" style="width:99%" id="table2">
+              <thead class="table-dark">
+                <tr> 
+                  <th style="width:12%">Date</th>
+                  <th style="width:12%">Actioned</th>
+                  <th style="width:20%">Department</th>  
+                  <th style="width:15%">Owner</th>
+                  <th style="width:15%">Status</th>   
+                </tr> 
+              </thead>
+              <tbody>
+                <tr>    
+                  <td><input type="text" class="txtinput"  style="width:100%" name="date"  value="2023/12/13 10:33"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="action"  value="Juan"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="department"  value="Printing"/></td> 
+                  <td><input type="text" class="txtinput"  style="width:100%" name="owner"  value="Martin"/></td> 
+                  <td><input type="text" class="txtinput"  style="width:100%" name="status"  value="Assigned"/></td> 
+                </tr>
+                <tr>    
+                  <td><input type="text" class="txtinput"  style="width:100%" name="date"  value="2023/12/13 11:03"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="action"  value="Martin"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="department"  value="Printing"/></td> 
+                  <td><input type="text" class="txtinput"  style="width:100%" name="owner"  value="Martin"/></td> 
+                  <td><input type="text" class="txtinput"  style="width:100%" name="status"  value="In Progress"/></td> 
+                </tr>
+                <tr>    
+                  <td><input type="text" class="txtinput"  style="width:100%" name="date"  value="2023/12/14 12:22"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="action"  value="Martin"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="department"  value="Printing"/></td> 
+                  <td><input type="text" class="txtinput"  style="width:100%" name="owner"  value="Martin"/></td> 
+                  <td><input type="text" class="txtinput"  style="width:100%" name="status"  value="Complete"/></td> 
+                </tr>
+                <tr>    
+                  <td><input type="text" class="txtinput"  style="width:100%" name="date"  value="2023/12/14 13:00"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="action"  value="Juan"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="department"  value="Printing"/></td> 
+                  <td><input type="text" class="txtinput"  style="width:100%" name="owner"  value="Martin"/></td> 
+                  <td><input type="text" class="txtinput"  style="width:100%" name="status"  value="Closed"/></td> 
+                </tr>
+              </tbody>
+            </table>
+        </div> 
+        <div class="error"></div>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-bottom bg-secondary" tabindex="-1" id="offcanvasDelete" aria-labelledby="offcanvasDeleteLabel">
+      <div class="offcanvas-header text-center col-12">
+        <h6 class="offcanvas-title col-12 display-6 m-0 p-0" id="offcanvasDeleteLabel">Delete Job</h6>
+      </div>
+      <div class="offcanvas-body text-center col-12">
+        <p>Do you want to delete this job?</p>
+      </div>
+      <div class="text-center col-12">
+        <button type="button" class="btn btn-dark btn-outline-danger col-1" data-bs-dismiss="offcanvas" aria-label="Close">Yes</button>
+        <button type="button" class="btn btn-dark col-1" data-bs-dismiss="offcanvas" aria-label="Close">No</button>
+      </div>
+      <div class="offcanvas-body"></div>
+    </div>
+    <div class="offcanvas offcanvas-bottom bg-secondary" tabindex="-1" id="offcanvasAssign" aria-labelledby="offcanvasAssignLabel">
+      <div class="offcanvas-header text-center col-12">
+        <h6 class="offcanvas-title col-12 display-6 m-0 p-0" id="offcanvasAssignLabel">Assign Job</h6>
+      </div>
+      <div class="offcanvas-body text-center col-12">
+        <form>
+          <div class="row g-3">
+            <div class="col-3"></div>
+            <div class="col-1">
+              <label for="input" class="col-form-label float-end">Department:</label>
+            </div>
+            <div class="col-2">
+              <select class="form-select" id="inputGroupSelect01">
+                <option value="1">Design</option>
+                <option value="2">Printing</option>
+                <option value="3">Other</option>
+              </select>
+            </div>
+            <div class="col-1">
+              <label for="input" class="col-form-label float-end">Owner:</label>
+            </div>
+            <div class="col-2">
+              <select class="form-select" id="inputGroupSelect02">
+                <option value="1">Juan</option>
+                <option value="2">Fransie</option>
+                <option value="3">Martin</option>
+              </select>
+            </div>
+            <div class="col-3"></div>
+          </div>
+        </form>
+      </div>
+      <div class="text-center col-12">
+        <button type="button" class="btn btn-dark col-1" data-bs-dismiss="offcanvas" aria-label="Close">Save</button>
+        <button type="button" class="btn btn-dark col-1" data-bs-dismiss="offcanvas" aria-label="Close">Cancel</button>
+      </div>
+      <div class="offcanvas-body"></div>
+    </div>
+    <div class="offcanvas offcanvas-bottom bg-secondary" tabindex="-1" id="offcanvasAccept" aria-labelledby="offcanvasAcceptLabel">
+      <div class="offcanvas-header text-center col-12">
+        <h6 class="offcanvas-title col-12 display-6 m-0 p-0" id="offcanvasAcceptLabel">Accept Job</h6>
+      </div>
+      <div class="offcanvas-body text-center col-12">
+        <p>Do you want to accept this job?</p>
+      </div>
+      <div class="text-center col-12">
+        <button type="button" class="btn btn-dark col-1" data-bs-dismiss="offcanvas" aria-label="Close">Yes</button>
+        <button type="button" class="btn btn-dark col-1" data-bs-dismiss="offcanvas" aria-label="Close">No</button>
+      </div>
+      <div class="offcanvas-body"></div>
+    </div>
+    <script src="../style/js/bootstrap.bundle.js"></script>
+    <script>
+      // Add some JavaScript to check for password match and display error message
+
+    </script>
+  </body>
+</html>

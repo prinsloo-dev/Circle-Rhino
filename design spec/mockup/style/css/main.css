@@ -1,0 +1,184 @@
+
+
+  /* declairing global CSS variables */
+  :root{
+    --pgebckgrnd : rgb(248, 250, 252);
+    --pgeforgrnd : rgb(2, 49, 97);
+    --headbckgnd: rgb(213, 214, 214);
+    --headforgnd: rgb(3, 7, 196);
+    --txtbig: 25px;
+    --txtmed: 15px;
+    --txtsml: 10px;
+}
+
+* { /*The CSS rule below will affect every HTML element on the page*/
+    box-sizing: border-box; /* includes the border and padding in the box size*/
+    margin: 3; /* margin around boxes */
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 7px; /* border radius of all boxes*/
+    background-color: var(--pgebckgrnd);
+    color: var(--pgeforgrnd);	/* forground color */
+    padding: 5px;
+  }
+
+/* Add some styling to all header element */
+h1, h2, h3 {
+  display: grid;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background-color: var(--headbckgnd);
+  color: var(--headforgnd);	/* forground color */
+}
+h1 {/* h1 refers to the h1 element */
+  height: 60px;
+  font-size: var(--txtbig);
+  text-align: center;
+}	 
+h2 {/* h2 refers to the h1 element */
+  height: 30px;
+  font-size: var(--txtmed);
+  text-align: right;
+}
+h3 {
+  height: 50px;
+  font-size: var(--txtbig);
+  text-align: center;
+}
+
+/* setup the columns*/
+.column {
+  border: 1px solid var(--pgeforgrnd);
+  float: left;
+  height: 500px;
+}
+.left {
+width: 15%;
+display: block; /* Make the buttons appear below each other */
+} 
+.right {
+width: 85%;
+}
+
+/* Add some styling to the buttons on the left */
+button {
+    /* position */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* size*/
+    width: 130px;
+    /* dimensions */
+    border-radius: 4px;
+    border: none;
+    padding: 10px 10px;
+    margin-top: 10px;
+    /* contents */
+    background-color: var(--headbckgnd);
+    color: var(--headforgnd);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Add some styling to the forms */
+form { /* affects all form elements with class=list and class=form*/
+
+}
+.form { /* affect class=form forms*/
+
+}
+.list { /* affect class=list forms*/
+
+}
+#table1 { /*normal form tables*/
+
+}
+
+#table1 td {
+}
+
+#table2{ /*list tables*/
+
+}
+
+
+th {/*list table header style*/
+  font-size: 14px;
+  font-weight: bold;
+  align-items: center;
+  background-color: var(--headbckgnd);
+  color: var(--headforgnd);
+}
+
+.label {
+  text-align: right;
+}
+
+a {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+ 
+.txtinput {
+  border: 1px solid var(--headbckgnd);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+  input[type="submit"] {
+    width: 130px;
+    border: none;
+    padding: 10px 10px;
+    margin-top: 10px;
+    background-color: var(--headbckgnd);
+    color: var(--headforgnd);
+    cursor: pointer;
+    font-size: 18px;
+  }
+  input[type="submit"]:hover {
+    background-color: rgb(39, 176, 240);
+  }
+  .error {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }

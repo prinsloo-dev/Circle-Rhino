@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Rhino Job System</title>
+    <link href="../style/css/bootstrap.css" rel="stylesheet">
+</head>
+<body class="bg-body-secondary">
+  <nav class="navbar bg-dark fixed-top">
+    <div class="container-fluid row">
+        <div class="col">
+            <button class="navbar-toggler btn btn-outline-dark bg-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="col-10">
+            <h1 class="display-6 text-center text-secondary">Circle Rhino Job System</h1>
+        </div>
+        <div class="col bg-secondary card" >
+            <img src="../style/icons/person-circle.svg" class="bi bi-person-circle secondary card-img-top" style="width: 40px; align-self: center;"/>
+            <div class="card-body p-0">
+              <p class="text-dark text-sm-center card-text">Juan</p>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start bg-secondary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> </h5>
+                <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item d-grid gap-1 p-0 m-0">
+                    <button type="button" class="btn btn-dark m-1">
+                        <a class="nav-link active" aria-current="page" href="../index.html" style="color: rgb(108, 117, 125)">Home</a>
+                    </button>
+                    </li>
+                    <li class="nav-item d-grid gap-1 p- m-0">
+                        <button type="button" class="btn btn-dark m-1 dropdown-toggle row p-3"  data-bs-toggle="dropdown" style="color: rgb(108, 117, 125)">
+                            Dashboards
+                        </button>
+                        <ul class="dropdown-menu bg-dark text-center me-2 ms-2">
+                            <li class="nav-item d-grid gap-1 p-0 m-0">
+                                <button type="button" class="btn btn-secondary m-1 p-0">
+                                  <a class="dropdown-item nav-link" aria-current="page" href="../Dashboards/open_jobs.html">Open Jobs</a>
+                                </button>
+                            </li>
+                            <li class="nav-item d-grid gap-1 p-0 m-0">
+                                <button type="button" class="btn btn-secondary m-1 p-0">
+                                    <a class="dropdown-item nav-link" aria-current="page" href="">Timeline</a>
+                                </button>
+                            </li>
+                            <li class="nav-item d-grid gap-1 p-0 m-0">
+                                <button type="button" class="btn btn-secondary m-1 p-0">
+                                    <a class="dropdown-item nav-link" aria-current="page" href="">Job/Quote</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-grid gap-1 p-0 m-0">
+                      <button type="button" class="btn btn-dark m-1">
+                          <a class="nav-link active" aria-current="page" href="../pages/quotelist.html" style="color: rgb(108, 117, 125)">Quotes</a>
+                      </button>
+                  </li>
+                    <li class="nav-item d-grid gap-1 p-0 m-0">
+                        <button type="button" class="btn btn-dark m-1">
+                            <a class="nav-link active" aria-current="page" href="../pages/Joblist.html" style="color: rgb(108, 117, 125)">Jobs</a>
+                        </button>
+                    </li>
+                    <li class="nav-item d-grid gap-1 p-0">
+                        <button type="button" class="btn btn-dark m-1">
+                            <a class="nav-link active" aria-current="page" href="../pages/listDeparts.html" style="color: rgb(108, 117, 125)">Departments</a>
+                        </button>
+                    </li>
+                    <li class="nav-item d-grid gap-1 p-0">
+                        <button type="button" class="btn btn-dark m-1">
+                            <a class="nav-link active" aria-current="page" href="../pages/employees.html" style="color: rgb(108, 117, 125)">Employees</a>
+                        </button>
+                    </li>
+                    <li class="nav-item d-grid gap-1 p-0">
+                        <button type="button" class="btn btn-dark m-1">
+                            <a class="nav-link active" aria-current="page" href="../pages/customerlist.html" style="color: rgb(108, 117, 125)">Customers</a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </nav>
+    <div class="row bg-black mt-4 pt-5 "></div>
+    <div class="row bg-secondary pt-2 ">
+      <div class="col-1 m-0 p-0 pt-1">
+        <a href="./quotelist.html">
+          <button type="button" class="btn  btn-secondary" style="color: rgb(0, 0, 0); width: 100%;">
+              <img src="../style/icons/reply-fill.svg" />
+              Back
+          </button>
+        </a>
+      </div>
+      <div class="col-1 m-0 p-0 pt-1">
+        <button type="button" class="btn  btn-secondary" style="color: rgb(0, 0, 0); width: 100%;">
+            <img src="../style/icons/floppy.svg" />
+            Save Quote
+        </button>
+      </div>
+      <div class="col-1 m-0 p-0 pt-1">
+        <button type="button" class="btn  btn-secondary" style="color: rgb(0, 0, 0); width: 100%;">
+            <img src="../style/icons/plus-circle.svg" />
+            New Line
+        </button>
+      </div>
+      <div class="col-1 m-0 p-0 pt-1">
+        <button type="button" class="btn  btn-secondary" style="color: rgb(0, 0, 0); width: 100%;">
+          <img src="../style/icons/envelope-check.svg" />
+          Send
+        </button>
+      </div>
+      <div class="col-1 m-0 p-0 pt-1">
+          <button type="button" class="btn  btn-secondary" style="color: rgb(0, 0, 0); width: 100%;">
+              <img src="../style/icons/printer.svg" />
+              Print
+          </button>
+      </div>
+      <div class="col-1 m-0 p-0 pt-1">
+        <button type="button" class="btn  btn-secondary" style="color: rgb(0, 0, 0); width: 100%;">
+          <img src="../style/icons/plus-circle.svg" />
+          Create Jobs
+      </button>
+      </div>
+      <div class="col-1 m-0 p-0 pt-1">
+      </div>
+      <div class="col-1 m-0 p-0 nav-item dropdown pt-1">
+      </div>
+      <div class="col-2">
+      </div>
+  </div>
+    <div class="row m-3">
+      <div class="col-12 text-center">
+        <h3 class="display-5">Quote</h3>
+        <div class="form">
+          <form method="get">
+            <div class="row g-3">
+              <div class="col-1"></div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">Quote Number:</label>
+              </div>
+              <div class="col-2">
+                <input type="text" class="form-control" name="Job Title" value="70958">
+              </div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">Date:</label>
+              </div>
+              <div class="col-2">
+                <input type="text" class="form-control"  name="Job Title" value="14 November 2023">
+              </div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">Customer:</label>
+              </div>
+              <div class="col-2">
+                <select class="form-select" id="inputGroupSelect01">
+                  <option value="1">Darios Deli</option>
+                  <option value="2">Customer 2</option>
+                  <option value="3">Customer 3</option>
+                </select>
+              </div>
+            </div> 
+            <div class="row g-3">
+              <div class="col-1"></div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">Contact Person:</label>
+              </div>
+              <div class="col-2">
+                <select class="form-select" id="inputGroupSelect01">
+                  <option value="1">Darios</option>
+                  <option value="2">Person 2</option>
+                  <option value="3">Person 3</option>
+                </select>
+              </div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">Tel No:</label>
+              </div>
+              <div class="col-2">
+                <input type="text" class="form-control"  name="Job Title" value="082 665 4324">
+              </div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">e-mail:</label>
+              </div>
+              <div class="col-2">
+                <input type="text" class="form-control"  name="Job Title" value="NA">
+              </div>
+            </div>
+            <div class="row g-3">
+              <div class="col-9"></div>
+              <div class="col-1 mt-5 pt-3">
+                <label for="input" class="col-form-label float-end">Sub Total:</label>
+              </div>
+              <div class="col-1 mt-5 pt-3">
+                <input type="text" class="form-control"  name="Job Title" value="R 109 950.00">
+              </div>
+            </div>
+            <div class="row g-3">
+              <div class="col-9"></div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">15% V.A.T:</label>
+              </div>
+              <div class="col-1">
+                <input type="text" class="form-control"  name="Job Title" value="R   16 492.50">
+              </div>
+            </div>
+            <div class="row g-3">
+              <div class="col-9"></div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">TOTAL:</label>
+              </div>
+              <div class="col-1">
+                <input type="text" class="form-control"  name="Job Title" value="R 126 442.50">
+              </div>
+            </div>
+            <div class="row g-3">
+              <div class="col-9"></div>
+              <div class="col-1">
+                <label for="input" class="col-form-label float-end">Deposit:</label>
+              </div>
+              <div class="col-1">
+                <input type="text" class="form-control"  name="Job Title" value="R         0.00">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="list">
+          <form method="get">
+            <table class="table table-hover table-bordered table-secondary m-2 mt-2" style="width:99%" id="table2"> 
+              <thead class="table-dark"> 
+                <tr> 
+                  <th style="width:2%"></th>
+                  <th style="width:5%">Qty</th>
+                  <th style="width:13%">Name</th>
+                  <th style="width:45%">Description</th>
+                  <th style="width:10%">Size</th>
+                  <th style="width:8%">Price Each</th>
+                  <th style="width:8%">Total Price</th>
+                  <th style="width:9%"></th>  
+                </tr> 
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td> 
+                  <td><input type="text" class="txtinput"  style="width:100%" name="qty"  value="1"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="Grab & Go Counter Sign"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="3mm ACM cut outs. Fitted to counter on pins"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="1720mm x 500mm"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="amount"  value="R 3 350.00"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="total"  value="R 3 350.00"/></td>
+                  <td><a href=""><button type="button" class="btn  btn-secondary float-start" style="color: rgb(0, 0, 0); width: 30%;">
+                    <img src="../style/icons/trash.svg" />
+                    </button></a>
+                  </td> 
+                </tr>
+                <tr>
+                  <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td> 
+                  <td><input type="text" class="txtinput"  style="width:100%" name="qty"  value="1"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="Pizza & Pasts Counter Sign"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="3mm ACM cut outs. Fitted to counter on pins"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="3000mm x 500mm"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="amount"  value="R 4 450.00"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="total"  value="R 4 450.00"/></td>
+                  <td><a href=""><button type="button" class="btn  btn-secondary float-start" style="color: rgb(0, 0, 0); width: 30%;">
+                    <img src="../style/icons/trash.svg" />
+                    </button></a>
+                  </td> 
+                </tr>
+                <tr>
+                  <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td> 
+                  <td><input type="text" class="txtinput"  style="width:100%" name="qty"  value="1"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="Italy Silhouette"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="3mm ACM cut outs. Fitted to wall on pins - Illuminated @ back with LED lights"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="1500mm x 1800mm"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="amount"  value="R 9 250.00"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="total"  value="R 9 250.00"/></td>
+                  <td><a href=""><button type="button" class="btn  btn-secondary float-start" style="color: rgb(0, 0, 0); width: 30%;">
+                    <img src="../style/icons/trash.svg" />
+                    </button></a>
+                  </td> 
+                </tr>
+                <tr>
+                  <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td> 
+                  <td><input type="text" class="txtinput"  style="width:100%" name="qty"  value="3"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="Window Arch Display"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="3mm Plexiglass cut outs. Fitted to counter on 20mm - standoffs. Digital print applied on back with white - backing"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="1100mm x 1750mm"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="amount"  value="R 4 250.00"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="total"  value="R 12 750.00"/></td>
+                  <td><a href=""><button type="button" class="btn  btn-secondary float-start" style="color: rgb(0, 0, 0); width: 30%;">
+                    <img src="../style/icons/trash.svg" />
+                    </button></a>
+                  </td> 
+                </tr>
+                <tr>
+                  <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td> 
+                  <td><input type="text" class="txtinput"  style="width:100%" name="qty"  value="1"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="Name Light"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="LED Neon tube light 'Dario's Deli' - With 6mm clear backing"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="1000mm x 400mm"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="amount"  value="R 7 650.00"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="total"  value="R 7 650.00"/></td>
+                  <td><a href=""><button type="button" class="btn  btn-secondary float-start" style="color: rgb(0, 0, 0); width: 30%;">
+                    <img src="../style/icons/trash.svg" />
+                    </button></a>
+                  </td> 
+                </tr>
+                <tr>
+                  <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td> 
+                  <td><input type="text" class="txtinput"  style="width:100%" name="qty"  value="20"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="A4 Foto Canvis's"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="PVC banner c/w digital print. - Blocked over wooden frame - Blocked over wooden frame"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="210mm x 295mm"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="amount"  value="R 210.00"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="total"  value="R 4 200.00"/></td>
+                  <td><a href=""><button type="button" class="btn  btn-secondary float-start" style="color: rgb(0, 0, 0); width: 30%;">
+                    <img src="../style/icons/trash.svg" />
+                    </button></a>
+                  </td> 
+                </tr>
+                <tr>
+                  <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td> 
+                  <td><input type="text" class="txtinput"  style="width:100%" name="qty"  value="1"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="'Family' Logo"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="3mm ACM cut outs. Fitted to wall on pins"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="1000mm x 400mm"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="amount"  value="R 2 250.00"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="total"  value="R 2 250.00"/></td>
+                  <td><a href=""><button type="button" class="btn  btn-secondary float-start" style="color: rgb(0, 0, 0); width: 30%;">
+                    <img src="../style/icons/trash.svg" />
+                    </button></a>
+                  </td> 
+                </tr>
+                <tr>
+                  <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="qty"  value="1"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="Main Sign"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="3mm Fabricated Plexi glass logo. - With 60mm returns. Internally illuminated. - Fitted on 3mm ACM Boxed back board"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="5500mm x 2200mm"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="amount"  value="R 62 850.00"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="total"  value="R 62 850.00"/></td>
+                  <td><a href=""><button type="button" class="btn  btn-secondary float-start" style="color: rgb(0, 0, 0); width: 30%;">
+                    <img src="../style/icons/trash.svg" />
+                    </button></a>
+                  </td> 
+                </tr>
+                <tr>
+                  <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td> 
+                  <td><input type="text" class="txtinput"  style="width:100%" name="qty"  value="1"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="Fitment"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="1 x Cherry Picker - 1 x Fitment & Conection of all signage"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="descr"  value="N/A"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="amount"  value="R 3 200.00"/></td>
+                  <td><input type="text" class="txtinput"  style="width:100%" name="total"  value="R 3 200.00"/></td>
+                  <td><a href=""><button type="button" class="btn  btn-secondary float-start" style="color: rgb(0, 0, 0); width: 30%;">
+                    <img src="../style/icons/trash.svg" />
+                    </button></a>
+                  </td> 
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div> 
+        <div class="error"></div>
+      </div>
+    </div>
+
+    <script src="../style/js/bootstrap.bundle.js"></script>
+    <script>
+      // Add some JavaScript to check for password match and display error message
+
+    </script>
+  </body>
+</html>

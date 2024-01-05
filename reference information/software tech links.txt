@@ -1,0 +1,5 @@
+aws.plainenglish.io/a-free-powerful-server-ca722cc64a44
+stackoverflow.com/questions/39720254/can-i-run-docker-in-a-virtual-machine
+
+
+https://www.bunnyshell.com/blog/best-practices-for-dev-qa-and-production-environments/
